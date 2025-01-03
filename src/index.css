@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gantari:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@layer utilities {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      @apply appearance-none;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+}
+/* font-family: "Inter", serif;
+font-family: "Gantari", serif;
+font-family: "DM Sans", serif;
+font-family: "Albert Sans", serif; */
