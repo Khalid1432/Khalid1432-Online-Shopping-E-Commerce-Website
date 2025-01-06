@@ -21,7 +21,7 @@ const CategoryPage = () => {
                         loading ? (<div className='flex justify-center'><Spinner /></div>) :
                         (
                             filterData.length > 0 ?
-                            <div className='grid grid-cols-4 gap-8 pb-10'>
+                            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 xl:gap-6 pb-10'>
                                 {
                                     filterData.map((item) => <ProductCard item={item} key={item.id} />)
                                 }
